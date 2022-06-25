@@ -1,0 +1,33 @@
+<form action="/send" method="POST">
+    <label> <input name="login", placeholder="Юзер"> </label> <br>
+    <label> <input name="password", placeholder="Пароль"> </label> <br>
+    <label> <input name="message", placeholder="Введите сообщение"> </label> <br>
+    <label> <button>Отправить и войти</button> </label> <br>
+</form>
+<form action="/reg" method="POST">
+    <label> <input name="login", placeholder="Юзер"> </label> <br>
+    <label> <input name="password", placeholder="Пароль"> </label> <br>
+    <label> <button>Зарегаться</button> </label> <br>
+</form>
+<form action="/delUS" method="POST">
+    <label> <input name="login", placeholder="Юзер"> </label> <br>
+    <label> <input name="password", placeholder="Пароль"> </label> <br>
+    <label> <button>Удалить акк</button> </label> <br>
+</form>
+<form action="/findus" method="POST">
+    <label> <input name="id", placeholder="id юзера"> </label> <br>
+    <label> <button>Найти</button> </label> <br>
+</form>
+{% if logged %}
+    <a href="/logout">Выйти</a><br>
+<form method="POST" action="/">
+    <button type="submit" name="allMessages">Вывести все сообщения</button>
+    <button type="submit" name="getId">Найти по id</button>
+    <button type="submit" name="getName">Вывести все сообщения по имени пользователя</button>
+    <button type="submit" name="delete">Удалить сообщение по id</button>
+    <button type="submit" name="save">Сохранить сообщение</button>
+</form>
+{% endif %}
+<style>
+    body {background-color: #B0E0E6;}
+</style>

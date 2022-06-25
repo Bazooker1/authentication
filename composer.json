@@ -1,0 +1,17 @@
+{
+    "name": "user/dantega-composer",
+    "autoload": {
+        "psr-4": {
+            "User\\DantegaComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dantega"
+        }
+    ],
+    "require": {
+        "twig/twig": "3.0",
+        "monolog/monolog": "^2.7"
+    }
+}
